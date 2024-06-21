@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio da Tabela</title>
+    <title>Tabela de Filmes</title>
     <style>
         body {
-            background-color: rgb(255, 227, 192);
+            background-color: rgb(239, 216, 255);
             padding: 0px;
-            margin: 40px;
+            margin: 20px;
             font-family: Arial, Helvetica, sans-serif;
         }
 
         table{
             border-collapse: collapse;
-            width: 500px;
+            width: 40px;
         }
 
-        td {
+        td, th {
             border: 1px solid black;
             padding: 10px;
             text-align: center;
@@ -25,36 +25,20 @@
     </style>
 </head>
 <body>
-    <h1>Desafio 2 - Tabela</h1>
+    <h1>Lista de Filmes</h1>
     <table>
-        <tr>
-            <td colspan="4">A</td>
-            <td rowspan="4">B</td>
-        </tr>
-        <tr>
-            
-            <td  rowspan="4">C</td>
-            <td>D</td>
-            <td>E</td>
-            <td>F</td>
-            
-        </tr>
-        <tr>
-            <td>G</td>
-            <td>H</td>
-            <td>I</td>
-        </tr>
-        <tr>
-            <td>J</td>
-            <td>K</td>
-            <td>L</td>
-        </tr>
-        <tr>
-            <td colspan="4">M</td>
-        </tr>
-        <tr>
-
-        </tr>
+        <thead>
+            <tr>
+                <th>Grupos</th>
+                <th colspan="2">Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+            <tr>
+                <th>Mulheres</th>
+                <th>Homens</th>
+            </tr>
+        </thead>
+        <caption></caption>
     </table>
 </body>
 </html>
