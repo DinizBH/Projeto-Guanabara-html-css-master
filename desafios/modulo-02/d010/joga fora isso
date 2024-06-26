@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copiar Conteúdo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Conteúdo do Contrato</h2>
+<textarea id="contractContent" readonly>
+Em relação ao design e conteúdo de um contrato, há um certo grau de liberdade, mas também existem importantes limitações e requisitos legais que devem ser observados para garantir a validade e eficácia do contrato. Aqui estão alguns pontos chave sobre o design e conteúdo de um contrato:
+
+Liberdade de Formato e Design
+
+1. Estrutura e Formato:
+   - Você tem liberdade para escolher o formato, estrutura e design do contrato. Pode usar layouts personalizados, diferentes estilos de formatação, e incluir elementos gráficos, desde que isso não comprometa a clareza e a compreensão do conteúdo.
+   - A estética do contrato, como a escolha de fontes, cores e disposição visual, pode ser ajustada conforme a preferência das partes, desde que não prejudique a legibilidade e entendimento do texto.
+
+Conteúdo do Contrato
+
+2. Conteúdo Substancial:
+   - As partes têm autonomia para definir os termos e condições do contrato. Isso inclui as obrigações, direitos, prazos, valores e qualquer cláusula específica que as partes considerem importante.
+   - No entanto, essa autonomia está sujeita a certas limitações legais e princípios fundamentais, como a função social do contrato, a boa-fé, e a probidade.
+
+3. Limitações Legais e Princípios Fundamentais:
+   - Função Social do Contrato: O contrato deve respeitar a função social e não pode violar os princípios da dignidade humana e justiça social.
+   - Boa-fé e Probidade: As partes devem agir com honestidade e lealdade durante a negociação, execução e conclusão do contrato.
+   - Legislação Aplicável: O conteúdo do contrato deve estar em conformidade com a legislação vigente, incluindo normas específicas para determinados tipos de contrato (ex.: contratos de trabalho, de consumo, locação, etc.).
+
+Requisitos Essenciais
+
+4. Elementos Essenciais:
+   - Identificação das Partes: Nome completo, CPF/CNPJ, endereço e outras informações de identificação das partes envolvidas.
+   - Objeto do Contrato: Descrição clara e precisa do que está sendo contratado.
+   - Obrigações e Direitos: Detalhamento das obrigações e direitos de cada parte.
+   - Condições de Pagamento: Especificação de valores, prazos e formas de pagamento.
+   - Prazos e Vigência: Determinação dos prazos para cumprimento das obrigações e a duração do contrato.
+   - Cláusulas de Rescisão: Condições sob as quais o contrato pode ser rescindido.
+   - Cláusula Penal: Definição de penalidades em caso de descumprimento.
+   - Foro de Eleição: Local onde eventuais disputas serão resolvidas.
+
+5. Clareza e Compreensibilidade:
+   - O contrato deve ser claro e compreensível, evitando termos ambíguos ou obscuros que possam gerar confusão ou disputas futuras.
+
+Exemplos de Cláusulas Importantes
+
+6. Cláusulas Comuns:
+   - Cláusula de Confidencialidade: Protege informações sensíveis trocadas entre as partes.
+   - Cláusula de Força Maior: Define condições para casos de eventos imprevistos e incontroláveis.
+   - Cláusula de Arbitragem: Estabelece a arbitragem como meio de resolução de disputas.
+   - Cláusula de Alterações: Define como alterações ao contrato devem ser feitas e aprovadas.
+
+Conclusão
+
+Embora você tenha liberdade para criar e estruturar seu contrato de maneira personalizada, é essencial garantir que o conteúdo atenda aos requisitos legais e princípios fundamentais. Recomenda-se sempre revisar o contrato com um advogado especializado para assegurar sua conformidade legal e proteger os interesses das partes envolvidas.
+</textarea>
+<button onclick="copyToClipboard()">Copiar Conteúdo</button>
+
+<script>
+function copyToClipboard() {
+    var copyText = document.getElementById("contractContent");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // Para dispositivos móveis
+    document.execCommand("copy");
+    alert("Conteúdo copiado!");
+}
+</script>
+
+</body>
+</html>
