@@ -2,6 +2,38 @@
 
 /* Todas as demais medias */
 
-@media print {
+/* Tipycal Device Breakpoints 
+Pequenas Telas: Até 600px
+Celular: De 600px até 768px
+Tablet: De 768px até 992px 
+Desktop: 992px até 1200px
+Grandes Telas: Avima de 1200px
+*/
+
+@media print { /*IMPRESSÃO*/
+
+}
+
+
+/* ESSA CONFIGURAÇÃO "AQUI", NÃO É NECESSÁRIA, SENDO QUE FIZ O MODELO MOBILE FIRST.
+@media screen and (max-width:600px) {
+    
+}
+
+@media screen and (min-width:600px) and (max-width:768px){
+     */
+
+
+@media screen and (min-width:768px) and (max-width:992px) { /*TABLET*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }    
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){/*DESKTOP*/
+
+}
+ 
+@media screen and (min-width:1200px){/*TELAS GRANDES*/
 
 }
